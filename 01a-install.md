@@ -48,13 +48,14 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I installed Python 3 via **Anaconda**.  Python 3 seems to be the way of the future, and all the latest package updates, etc will be for it.  *Eventually* python 2 will no longer be supported.  Also I've been practicing coding on Codewars and HackerRank, and both default to python 3. 
 
 ### Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 1. Type "python" on the terminal to load it.  When you do the version is displayed.
+>> 1. Type "python --version" into the terminal.  The current version of python will be reported.
 
  
 
