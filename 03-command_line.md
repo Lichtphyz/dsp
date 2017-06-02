@@ -34,7 +34,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+- `ls` lists files and subdirectories of the current location
+- `ls -a`  includes hidden files in the standard list
+- `ls -l`  long form list of local files, including user, modificaiton date, etc. file sizes are in bytes
+- `ls -lh`  same as ls -l, but file sizes show in B, Kb, Mb, etc.
+- `ls -lah`  long form list, includes hidden files, shows abriaviated file sizes
+- `ls -t`   sorts files by modification time
+- `ls -Glp` -G colors directories (violet), long form list, with final slash after directories
 
 ---
 
@@ -42,7 +48,16 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+*I found a more extensive (and useful!) [ls option list](http://www.rapidtables.com/code/linux/ls.htm#options)*, some of these are from there, hope you don't mind.
+
+**My 5 favorite ls -options**
+1. `ls -S` list files by size, largest to smallest
+1. `ls -R` also lists contents of each subdirectory AND each of their subdirectories all the way down
+1. `ls -X` list files y extension
+1. `ls -1` limits output to 1 entry per line
+1. `ls -u` sorts by time of last access
+
+all of these support other useful modifications such as -l, -G, -lh, -a, etc.
 
 ---
 
@@ -50,7 +65,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > The Unix command `xargs` is used to take the output of one command (such as grep, find, or ls) and individually pipe each returned result on to a second command to be run on *each* output of the first command.  Here's one silly example I just made up:
+
+>>> `$find python | xargs du`
+
+>>The `find python` part will generate a list of files containing "python" in their path and the `du` command will then estimate the file size of each one of them in turn.
 
  
 
