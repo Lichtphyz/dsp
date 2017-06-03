@@ -77,11 +77,13 @@ print("This file was created by Reshama")
 
 Upload these 3 files to the [`editors`](editors/) folder.  
 
+>>>*files copied*
+
 ### Q2. Terminal Editor
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I am going to give **vim** a try.  Frankly I don't have a really good reason for vim vs emacs, my choice is a little arbitrary, but I have been messing around with vim a bit and am reasonably happy with it so far; though I still have a LOT of commands to learn.
 
 --
 
@@ -89,6 +91,15 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I expact to use **spyder** as my primary IDE, and **atom** as a suplimental graphical editor.  I started on both these editors while learning python in the month before applying to Metis.  Sypder reminds me a lot of an **IDL** interface I used while in college, and I like the idea of being able to quickly test out code without leaving the IDE, and spyder is good about indicating syntax errors on the fly.  It is also a part of the Anaconda Python install, and is updated through that package.  Before installing spyder I had been learning to code python using the **atom** graphical text editor, which while not quite as integrated with python I was also quite happy with, especially when looking over a larger number of files.  I expect to use both editors during the pre-work and make a final decision before the program begins.
 
+>>A few useful Spyder keyboard shorcuts:
+$TAB autocompletes lots of variable names, functions, and other commands and is very handy
+$Alt + up or down arrow moves the current line up or down relative to the rest of the text
+$F5 to execute the current file in the iPython console
+$Cmd + s saves current file
+$Cmd ++  increases editor font size, useful when getting eyestrain, or just to find the best size for the moment.
+$Cmd --  decreases editor fond size, for getting the big picture, etc.
+
+>>Spyder can be customized using the GUI preferences menu.  
  
