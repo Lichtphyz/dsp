@@ -83,7 +83,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> I am going to give **vim** a try.  Frankly I don't have a really good reason for vim vs emacs, my choice is a little arbitrary, but I have been messing around with vim a bit and am reasonably happy with it so far; though I still have a LOT of commands to learn.
+>> I am going to give **vim** a try.  Frankly I haven't been able to find a really good argument for vim vs emacs, so my choice is a little arbitrary.  I did find that people tend to build an entire developer environment around emacs, which didn't sound especially appealing to me, and I don't know LISP anyway.  I have been messing around with vim a bit and am reasonably happy with it so far; though I still have a LOT of commands to learn and expect being good with it will take quite a bit of practice.
 
 --
 
@@ -93,13 +93,16 @@ What graphical editor will you use? How did you make your decision? What are som
 
 >> I expact to use **spyder** as my primary IDE, and **atom** as a suplimental graphical editor.  I started on both these editors while learning python in the month before applying to Metis.  Sypder reminds me a lot of an **IDL** interface I used while in college, and I like the idea of being able to quickly test out code without leaving the IDE, and spyder is good about indicating syntax errors on the fly.  It is also a part of the Anaconda Python install, and is updated through that package.  Before installing spyder I had been learning to code python using the **atom** graphical text editor, which while not quite as integrated with python I was also quite happy with, especially when looking over a larger number of files.  I expect to use both editors during the pre-work and make a final decision before the program begins.
 
->>A few useful Spyder keyboard shorcuts:
-$TAB autocompletes lots of variable names, functions, and other commands and is very handy
-$Alt + up or down arrow moves the current line up or down relative to the rest of the text
-$F5 to execute the current file in the iPython console
-$Cmd + s saves current file
-$Cmd ++  increases editor font size, useful when getting eyestrain, or just to find the best size for the moment.
-$Cmd --  decreases editor fond size, for getting the big picture, etc.
+>>A few useful Spyder keyboard shorcuts I have found so far:
+`TAB` autocompletes lots of variable names, functions, and other commands and is very handy
+`Alt + up or down arrow` moves the current line up or down relative to the rest of the text
+`F5` to execute the current file in the iPython console
+`Cmd + s` saves current file
+`Cmd ++`  increases editor font size, useful when getting eyestrain, or just to find the best size for the moment.
+`Cmd --`  decreases editor fond size, for getting the big picture, etc.
+*There are a **Lot** more, and nearly every command in the GUI menus also indicates it's corresponding keyboard shortcut*
 
->>Spyder can be customized using the GUI preferences menu.  
+>>Spyder can be customized using the GUI preferences menu.  So far I have changed the font sizes, synax coloring scheme, turned on interaction with the Python console after code execution (usually for debugging work in progress), and couple other minor interface tweeks.  
+
+>>In atom there are also preferences menus, but of particular interest is changing the settings in the *language-python* Package were all of the python specific settings are.  I haven't changed much yet, except to change the tab length from 2 to 4 spaces (to match other python editors), and an option to "show invisibles" such as tabs, returns, and spaces.
  
