@@ -18,6 +18,11 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    number_list = ["zero","one","two","three","four","five","six","seven","eight","nine"]
+    if count < 0: return "ERROR: you owe me some donuts"
+    elif count < len(number_list) : return number_list[count]
+    else: return "many"
+    
     raise NotImplementedError
 
 
@@ -37,6 +42,11 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    
+    if len(s) < 2: return ""
+    else: return s[:2] + s[-2:]
+    
+    
     raise NotImplementedError
 
 
@@ -56,6 +66,17 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
+    Start_letter = s[0]                 #store first letter for final output
+    
+    #delete the next line if you want the function to be case sensitive, I assumed it should not.
+    s = s.lower()                       #convert word to all lower case, so make the function case insensive
+    
+    censored = ""                       #set up empty string to put processed letters into
+    for l in s[1:]:                     #check every letter, except the first
+        if l == s[0]: censored += "*"    #if the letter is the same as the first letter, add "*" to the output instead of the letter
+        else: censored += l             #otherwise add the letter
+    return Start_letter + censored              #return the original first letter, plus the processes string
+
     raise NotImplementedError
 
 
@@ -74,6 +95,9 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+    
+    return b[:2] + a[2:] + " " + a[:2] + b[2:]          #just selected the parts of each string to print out
+    
     raise NotImplementedError
 
 
@@ -91,6 +115,12 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+    
+    if len(s) < 3: return s
+    elif s[-3:] == "ing": return s + "ly"
+    else:  return s + "ing"
+    
+    
     raise NotImplementedError
 
 
@@ -111,6 +141,20 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    
+    inot = s.find("not")            #locate the first 'not'
+    ibad = s.find("bad")            #locate the firt 'bad'
+    
+    if inot == -1: return s         #return original if 'not' is not found
+    if ibad == -1: return s         #return original if 'bad' is not found
+    if ibad < inot: return s        #return original if 'bad' comes before 'not'
+    
+    front = s[:inot]                #everything before 'not'
+    end = s[ibad+len("bad"):]       #everything after 'bad'
+
+    return front + "good" + end     #put "good" in between the two ends
+    
+    
     raise NotImplementedError
 
 
@@ -130,4 +174,20 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    
+    a_front = ""                                    #initialize 1st half of a
+    a_back  = ""                                    #initialize 2nd half of a
+    
+    for i in range(len(a)):                         #for every index in input a
+        if i < len(a)/2: a_front += a[i]            #if the index is less than half the length put the letter in the first half
+        else: a_back += a[i]                        #otherwise put it in the second half
+    
+    b_front = ""                                #repeat the same steps for string b
+    b_back  = ""
+
+    for i in range(len(b)):
+        if i < len(b)/2: b_front += b[i]
+        else: b_back += b[i]
+    
+    return a_front + b_front + a_back + b_back      #put together the halves in the mixed order described above
     raise NotImplementedError
