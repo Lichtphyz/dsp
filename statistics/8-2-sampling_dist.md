@@ -25,11 +25,15 @@ def EstimateQ2(n=10, iters=1000):
     
 EstimateQ2()
 ```
+
 Output:
+```
 90% confidence interval =  (1.2742649495275002, 3.5927008049765674)
 Standard Error in L 0.781721734204
 (and a graph of the CDF)
+```
 
+2nd part:
 ```
 N = range(5,100)
 MeanLs = []
@@ -40,5 +44,7 @@ thinkplot.Plot(N, MeanLs)
 thinkplot.Config(title='RMSE vs n', xlabel='size of sample (n)', ylabel='RMSE', 
                  loc='lower right')
 ```
+
 Output:
+
 *a bunch of confidence and error statements, and a graph of RMSE vs Sample size(n).  The graph decays towards 0 as n increases.  It looks very roughly inversely proportional.
